@@ -91,12 +91,13 @@ describe("Given I am connected as an employee", () => {
 
       newInstance.fileUrl = "Testfakeimg/pasici.jpg";
       newInstance.fileName = "Test fake img";
-
+      
       newInstance.updateBill = (bill) => {
         newInstance.testBill = bill;
       };
+      
       newInstance.handleSubmit(mockedSubmitEvent);
-
+      
       expect(newInstance.testBill).toEqual(expectedBill);
     });
   });
