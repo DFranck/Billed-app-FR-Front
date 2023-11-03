@@ -64,8 +64,7 @@ describe("Given I am connected as an employee", () => {
         store: mockStore,
         localStorage: localStorageMock,
       });
-      const instanceBill = await billsInstance.getBills();
-      expect(instanceBill).toEqual(expectedBills);
+       expect(await billsInstance.getBills()).toEqual(expectedBills);
     });
     it("should handleClickIconEye show modalFile", () => {
       let billsTest = Object.assign([], bills);
