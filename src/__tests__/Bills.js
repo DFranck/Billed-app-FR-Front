@@ -67,7 +67,7 @@ describe("Given I am connected as an employee", () => {
       const instanceBill = await billsInstance.getBills();
       expect(instanceBill).toEqual(expectedBills);
     });
-    it("should eyeicon are clickable", () => {
+    it("should handleClickIconEye work correctly", () => {
       let billsTest = Object.assign([], bills);
       document.body.innerHTML = BillsUI({ data: billsTest });
       const billInstance = new Bills({
@@ -89,6 +89,8 @@ describe("Given I am connected as an employee", () => {
       iconEye[0].click()
       const modalFile = document.getElementById('modaleFile')
       expect(modalFile).toHaveClass('show')
+      const billUrl = iconEye[0].getAttribute("data-bill-url");
+      expect(billUrl).toBe('https://test.storage.tld/v0/b/billable-677b6.a…f-1.jpg?alt=media&token=c1640e12-a24b-4b11-ae52-529112e9602a')
     });
     it("should getBills return 404 errors", async () => {
       const mockedStoreError = {
