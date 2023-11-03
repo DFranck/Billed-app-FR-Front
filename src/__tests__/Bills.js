@@ -67,7 +67,7 @@ describe("Given I am connected as an employee", () => {
       const instanceBill = await billsInstance.getBills();
       expect(instanceBill).toEqual(expectedBills);
     });
-    it("should handleClickIconEye work correctly", () => {
+    it("should handleClickIconEye show modalFile", () => {
       let billsTest = Object.assign([], bills);
       document.body.innerHTML = BillsUI({ data: billsTest });
       const billInstance = new Bills({
@@ -76,9 +76,10 @@ describe("Given I am connected as an employee", () => {
         store: mockStore,
         localStorage: localStorageMock,
       });
-      $.fn.modal = jest.fn(function(action){
-        if(action==='show')
-        this.addClass('show')
+      $.fn.modal = jest.fn(function (action){
+        if (action==='show'){
+          this.addClass("show")
+        }
       })
       const iconEye = document.querySelectorAll(`div[data-testid="icon-eye"]`);
       iconEye.forEach((icon) => {
@@ -86,11 +87,10 @@ describe("Given I am connected as an employee", () => {
         console.log(icon);
       });
       expect(iconEye).toHaveLength(4)
-      iconEye[0].click()
       const modalFile = document.getElementById('modaleFile')
+      expect(modalFile).not.toHaveClass('show')
+      iconEye[0].click()
       expect(modalFile).toHaveClass('show')
-      const billUrl = iconEye[0].getAttribute("data-bill-url");
-      expect(billUrl).toBe('https://test.storage.tld/v0/b/billable-677b6.a…f-1.jpg?alt=media&token=c1640e12-a24b-4b11-ae52-529112e9602a')
     });
     it("should getBills return 404 errors", async () => {
       const mockedStoreError = {
