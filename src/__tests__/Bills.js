@@ -11,10 +11,14 @@ import { localStorageMock } from "../__mocks__/localStorage.js";
 import mockStore from "../__mocks__/store.js";
 import Bills from "../containers/Bills.js";
 import { formatDate, formatStatus } from "../app/format.js";
-
+import $ from 'jquery'
+global.$ = global.jQuery = $
 import router from "../app/Router.js";
 
 describe("Given I am connected as an employee", () => {
+  beforeEach(() => {
+    document.body.innerHTML = "";
+  });
   describe("When I am on Bills Page", () => {
     test("Then bill icon in vertical layout should be highlighted", async () => {
       Object.defineProperty(window, "localStorage", {
@@ -62,6 +66,29 @@ describe("Given I am connected as an employee", () => {
       });
       const instanceBill = await billsInstance.getBills();
       expect(instanceBill).toEqual(expectedBills);
+    });
+    it("should eyeicon are clickable", () => {
+      let billsTest = Object.assign([], bills);
+      document.body.innerHTML = BillsUI({ data: billsTest });
+      const billInstance = new Bills({
+        document: document,
+        onNavigate: jest.fn(),
+        store: mockStore,
+        localStorage: localStorageMock,
+      });
+      $.fn.modal = jest.fn(function(action){
+        if(action==='show')
+        this.addClass('show')
+      })
+      const iconEye = document.querySelectorAll(`div[data-testid="icon-eye"]`);
+      iconEye.forEach((icon) => {
+        icon.addEventListener("click", () => billInstance.handleClickIconEye(icon));
+        console.log(icon);
+      });
+      expect(iconEye).toHaveLength(4)
+      iconEye[0].click()
+      const modalFile = document.getElementById('modaleFile')
+      expect(modalFile).toHaveClass('show')
     });
     it("should getBills return 404 errors", async () => {
       const mockedStoreError = {

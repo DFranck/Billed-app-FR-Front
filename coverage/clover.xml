@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1698827753553" clover="3.2.0">
-  <project timestamp="1698827753553" name="All files">
-    <metrics statements="240" coveredstatements="208" conditionals="103" coveredconditionals="83" methods="72" coveredmethods="54" elements="415" coveredelements="345" complexity="0" loc="240" ncloc="240" packages="3" files="16" classes="16"/>
+<coverage generated="1699000551419" clover="3.2.0">
+  <project timestamp="1699000551420" name="All files">
+    <metrics statements="240" coveredstatements="212" conditionals="103" coveredconditionals="83" methods="72" coveredmethods="56" elements="415" coveredelements="351" complexity="0" loc="240" ncloc="240" packages="3" files="16" classes="16"/>
     <package name="constants">
       <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="routes.js" path="C:\Users\overb\OneDrive\Documents\Franck\Pro\Projets\Projets Dev\Formation-OpenClassroom-Projet9\Formation-OpenClassroom-Projet9\Billed-app-FR-Front\src\constants\routes.js">
@@ -20,28 +20,28 @@
       </file>
     </package>
     <package name="containers">
-      <metrics statements="202" coveredstatements="170" conditionals="66" coveredconditionals="46" methods="56" coveredmethods="38"/>
+      <metrics statements="202" coveredstatements="174" conditionals="66" coveredconditionals="46" methods="56" coveredmethods="40"/>
       <file name="Bills.js" path="C:\Users\overb\OneDrive\Documents\Franck\Pro\Projets\Projets Dev\Formation-OpenClassroom-Projet9\Formation-OpenClassroom-Projet9\Billed-app-FR-Front\src\containers\Bills.js">
-        <metrics statements="31" coveredstatements="24" conditionals="13" coveredconditionals="11" methods="9" coveredmethods="6"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="13" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="12" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
+        <metrics statements="31" coveredstatements="28" conditionals="13" coveredconditionals="11" methods="9" coveredmethods="8"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="13" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="27" count="4" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="38" count="4" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
         <line num="39" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="40" count="4" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
@@ -180,11 +180,11 @@
       </file>
       <file name="Logout.js" path="C:\Users\overb\OneDrive\Documents\Franck\Pro\Projets\Projets Dev\Formation-OpenClassroom-Projet9\Formation-OpenClassroom-Projet9\Billed-app-FR-Front\src\containers\Logout.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="5" count="22" type="stmt"/>
-        <line num="6" count="22" type="stmt"/>
-        <line num="7" count="22" type="stmt"/>
-        <line num="8" count="22" type="stmt"/>
-        <line num="11" count="22" type="stmt"/>
+        <line num="5" count="23" type="stmt"/>
+        <line num="6" count="23" type="stmt"/>
+        <line num="7" count="23" type="stmt"/>
+        <line num="8" count="23" type="stmt"/>
+        <line num="11" count="23" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
       </file>
@@ -243,22 +243,22 @@
       <metrics statements="30" coveredstatements="30" conditionals="32" coveredconditionals="32" methods="15" coveredmethods="15"/>
       <file name="Actions.js" path="C:\Users\overb\OneDrive\Documents\Franck\Pro\Projets\Projets Dev\Formation-OpenClassroom-Projet9\Formation-OpenClassroom-Projet9\Billed-app-FR-Front\src\views\Actions.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="6" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
       </file>
       <file name="BillsUI.js" path="C:\Users\overb\OneDrive\Documents\Franck\Pro\Projets\Projets Dev\Formation-OpenClassroom-Projet9\Formation-OpenClassroom-Projet9\Billed-app-FR-Front\src\views\BillsUI.js">
         <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6"/>
         <line num="7" count="6" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
         <line num="26" count="6" type="stmt"/>
-        <line num="27" count="4" type="cond" truecount="4" falsecount="0"/>
-        <line num="28" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="4" type="stmt"/>
-        <line num="35" count="6" type="stmt"/>
-        <line num="52" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="28" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="35" count="7" type="stmt"/>
+        <line num="52" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="53" count="1" type="stmt"/>
-        <line num="54" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="54" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="55" count="1" type="stmt"/>
-        <line num="58" count="4" type="stmt"/>
+        <line num="58" count="5" type="stmt"/>
       </file>
       <file name="DashboardFormUI.js" path="C:\Users\overb\OneDrive\Documents\Franck\Pro\Projets\Projets Dev\Formation-OpenClassroom-Projet9\Formation-OpenClassroom-Projet9\Billed-app-FR-Front\src\views\DashboardFormUI.js">
         <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
@@ -291,11 +291,11 @@
       </file>
       <file name="VerticalLayout.js" path="C:\Users\overb\OneDrive\Documents\Franck\Pro\Projets\Projets Dev\Formation-OpenClassroom-Projet9\Formation-OpenClassroom-Projet9\Billed-app-FR-Front\src\views\VerticalLayout.js">
         <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="7" count="35" type="stmt"/>
-        <line num="8" count="35" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="20" type="stmt"/>
-        <line num="11" count="35" type="cond" truecount="4" falsecount="0"/>
-        <line num="12" count="4" type="stmt"/>
+        <line num="7" count="36" type="stmt"/>
+        <line num="8" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="21" type="stmt"/>
+        <line num="11" count="36" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="5" type="stmt"/>
         <line num="29" count="31" type="stmt"/>
       </file>
     </package>
